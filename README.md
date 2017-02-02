@@ -1,1 +1,1 @@
-# synbio.github.io
+# ljenn.github.io/synbio
