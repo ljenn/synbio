@@ -66,6 +66,142 @@ a {
   background-color:#333;
 }
 
+.mdl-card-tile {
+  margin: 40px;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0;
+  color: #fff;
+  width: calc(100% - 80px);
+
+}
+
+.demo-card-square.mdl-card {
+  width: 300px;
+  height: 300px;
+}
+
+.demo-card-square > . mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background:
+    url('../assets/images/2017igemlogo.jpg') bottom right 15% no-repeat #46B6AC;
+}
+
+.demo-card-wide.mdl-card {
+  width: 300px;
+}
+
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 300px;
+  background:
+    url('../assets/images/2017igemlogo.jpg') center / cover;
+}
+
+.demo-card-wide > .mdl-card_menu {
+  color: #fff;
+}
+
+/**************************************************/
+
+.tile {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tile:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-box {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  text-align: justify;
+}
+
+/* Caption of Modal Image */
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #000;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, .caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/**************************************************/
+
 .mdl-textfield--expandable {
   width: auto;
 }
@@ -209,7 +345,7 @@ a {
 }
 
 .mdl-demo .mdl-card {
-  height: auto;
+
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -219,7 +355,7 @@ a {
 }
 
 .mdl-demo .mdl-card > * {
-  height: auto;
+
 }
 .mdl-demo .mdl-card .mdl-card__supporting-text {
   margin: 40px;
@@ -256,7 +392,7 @@ a {
   margin-bottom: 48px;
 }
 .mdl-demo section.section--center {
-  max-width: 860px;
+  max-width: 90%;
 }
 .mdl-demo #features section.section--center {
   max-width: 620px;
