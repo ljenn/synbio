@@ -116,83 +116,74 @@
         <!-- TEXT CONTENT TABS -->
         <div class="mdl-layout__tab-panel is-active">
           <!-- 2017 iGEM Project -->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
+          <section class="mdl-grid">
+            <div class="mdl-card mdl-cell mdl-cell--4-col">
               <div class="mdl-card__supporting-text">
                 <center>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                    <img width=100% src="assets/images/2017igemlogo.jpg"></img>
-                </div>
-                <h3>iGEM 2017 - jose's project</h3>
-                <hr><br/><br/>
+                    <img id="2017" class="tile" width=100% src="assets/images/2017igemlogo.jpg"></img>
                 </center>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                  Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                <br/>
-                <br/>
-                <p>Sponsorship package: <a href="assets/testpdf.pdf">Test Pdf</a></p>
               </div>
             </div>
-          </section>
 
           <!-- 2015 iGEM Project -->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card mdl-cell mdl-cell--4-col">
               <div class="mdl-card__supporting-text">
                 <center>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                    <img width=100% src="assets/images/2015igemlogo.png"></img>
-                </div>
-                <h3>iGEM 2015 - Fiat Lux</h3>
-                <hr><br/><br/>
+                    <img id="2015" width=100% src="assets/images/2015igemlogo.png"></img>
                 </center>
-                <p>Fiat Lux optimizes the metabolic pathway of bacterial lux. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                <br/>
-                <p>Achievements and Contributions:</p>
-                <ul>
-                  <li>Interlab Measurement Study - Gold Medal Recognition</li>
-                  <li>PloS. Reproducibility of Fluorescent Expression from Engineered biological construct in ecoli</li>
-                  <li>UC San Francisco bioeng symposium presentation</li>
-                </ul>
-                <br/>
-                <p>Presentation Poster: <a href="assets/testpdf.pdf">Test Pdf</a></p>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="http://2015.igem.org/Team:UC_San_Diego" class="mdl-button">Website Documentation</a>
               </div>
             </div>
-          </section>
 
           <!-- 2014 iGEM Project -->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card mdl-cell mdl-cell--4-col">
               <div class="mdl-card__supporting-text">
                 <center>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                    <img width=100% src="assets/images/2014igemlogo.png"></img>
-                </div>
-                <h3>iGEM 2014 - SBiDer</h3>
-                <hr><br/><br/>
+                    <img id="2014" width=100% src="assets/images/2014igemlogo.png"></img>
                 </center>
-                <p>SBiDer is a web tool that automates the design of genetic circuits. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                <br/>
-                <p>Achievements and Contributions:</p>
-                <ul>
-                  <li>iGEM - Gold Medal Recognition</li>
-                  <li>Lorem Ipsum</li>
-                  <li>Dolor</li>
-                </ul>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="http://2015.igem.org/Team:UC_San_Diego" class="mdl-button">Website Documentation</a>
               </div>
             </div>
+
           </section>
+
+          <div id="2017igem" class="modal">
+            <span class="close">&times;</span>
+            <div id="2017caption" class="caption">
+              <div class="modal-box">
+                <center>
+                  <img width=70% src="assets/images/2015overview.png"></img>
+                </center>
+                <br/><br/>
+                if we want text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aenan convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aenan convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aenan convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aenan convallis.
+                  <a href="#"> link to site </a>
+              </div>
+            </div>
+          </div>
 
           <br/><br/>
 
       </main> <!-- Closing tag for main content on page mdl-layout content -->
     </div> <!-- Closing tag for MDL layout div -->
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script>
+    var modal = document.getElementById('2017igem');
+    var img = document.getElementById('2017');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("2017caption");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    </script>
   </body>
 </html>
