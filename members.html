@@ -1,0 +1,395 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="SynBio: Undergraduate Synthetic Biology Organization at UC San Diego">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>SynBio</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body class = "mdl-demo">
+    <!-- Div for MDL layout -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <!-- Header -->
+      <div class="synbio-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="android-title mdl-layout-title">
+            <a href ="index.html"><font color="#696969">Syn</font><font color="#00933B">Bio</font></a>
+	    <!-- <img class="android-logo-image" src="images/synbiologo.png"> -->
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="synbio-header-spacer mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <div class="android-navigation-container">
+
+            <nav class="android-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="about.html">About</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="members.html">Members</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="projects.html">Projects</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contact.html">Contact</a>
+            </nav>
+
+            <!-- Navigation Subtab (About) -->
+            <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu" for="about">
+              <li class="mdl-menu__item">SynBio</li>
+              <li disabled class="mdl-menu__item">Supporters</li>
+              <li disabled class="mdl-menu__item">Sponsors</li>
+            </ul>
+
+            <!-- Navigation Subtab (Education) -->
+            <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu" for="edu">
+              <li class="mdl-menu__item">SynBio.Learn</li>
+              <li class="mdl-menu__item">Outreach</li>
+              <li disabled class="mdl-menu__item">Journal Club</li>
+            </ul>
+
+            <!-- Navigation Subtab (Project) -->
+            <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu" for="proj">
+              <li class="mdl-menu__item">iGEM</li>
+              <li class="mdl-menu__item">DIY Project Incubator</li>
+            </ul>
+          </div> <!-- Navigation closing tag -->
+
+          <!-- Header title -->
+          <span class="android-mobile-title mdl-layout-title">
+          <a href="index.html"><b><font color=#696969>SYN</font><font color=#00933B>BIO</font></b></a>
+          <!-- <img class="android-logo-image" src="images/synbiologo.png"> -->
+          </span>
+
+        </div>
+      </div> <!-- Closing tags for header -->
+
+      <!-- Navigation Drawer for Mobile -->
+      <div class="android-drawer mdl-layout__drawer">
+      <span class="mdl-layout-title">
+      <font class="android-logo-image" color="#696969">Syn<font color="#00933B">Bio</font></font>
+      <!-- <img class="android-logo-image" src="images/synbiologo.png"> -->
+      </span>
+
+      <!-- Navigation for Mobile -->
+      <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="about.html">About</a>
+      <a class="mdl-navigation__link" href="members.html">Members</a>
+      <a class="mdl-navigation__link" href="projects.html">Projects</a>
+      <a class="mdl-navigation__link" href="contact.html">Contact</a>
+      </nav>
+      </div> <!-- Closing tag for navigation for mobile -->
+
+      <!-- Main content on the page -->
+      <main class="mdl-layout__content">
+
+          <!-- SynBio Members -->
+          <center><h3> Undergraduate Students</h3></center>
+          <section class="mdl-grid">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+              <div class="mdl-card__supporting-text">
+                <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                <p/>
+                <h5>Fernando Contreras</h5>
+                Bioengineering: BioSystems<br/>
+                Cognitive Science<br/>
+                UC San Diego, USA iGEM (2014, 2015)
+                </center>
+              </div>
+            </div>
+
+            <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+              <div class="mdl-card__supporting-text">
+                <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                <p/>
+                <h5>Jenny Lee</h5>
+                Bioinformatics<br/>
+                UC San Diego, USA iGEM (2015)<br/>
+                </center>
+              </div>
+            </div>
+
+            <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+              <div class="mdl-card__supporting-text">
+                <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                <p/>
+                <h5>Gary Le</h5>
+                Human Biology<br/>
+                UC San Diego, USA iGEM (2014)<br/>
+                </center>
+              </div>
+            </div>
+
+            <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+              <div class="mdl-card__supporting-text">
+                <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                <p/>
+                <h5>Pengfei "Jose" Gu</h5>
+                Bioengineering: Biotechnology<br/>
+                UC San Diego, USA iGEM (2017)
+                </center>
+              </div>
+            </div>
+
+            <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+              <div class="mdl-card__supporting-text">
+                <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                <p/>
+                <h5>Calvin Lam</h5>
+                Bioinformatics<br/>
+                </center>
+              </div>
+            </div>
+
+            <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+              <div class="mdl-card__supporting-text">
+                <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                <p/>
+                <h5>Evelyn Tong</h5>
+                Biology<br/>
+                State Key Laboratory for Bio Control, China iGEM (2014)
+                </center>
+              </div>
+            </div>
+
+            <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+              <div class="mdl-card__supporting-text">
+                <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                <p/>
+                <h5>Steven Wang</h5>
+                Marine Biology<br/>
+                Biology<br/>
+                Psychology<br/>
+                </center>
+              </div>
+            </div>
+
+            <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+              <div class="mdl-card__supporting-text">
+                <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                <p/>
+                <h5>Nico Reeve</h5>
+                Bioinformatics<br/>
+                </center>
+              </div>
+            </div>
+
+            <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+              <div class="mdl-card__supporting-text">
+                <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                <p/>
+                <h5>Alexander Lorenzo</h5>
+                Physics<br/>
+                </center>
+              </div>
+            </div>
+
+        </section>
+
+        <hr/>
+                  <!-- SynBio Members -->
+                  <center><h3> Graduate Students</h3></center>
+                  <section class="mdl-grid">
+                    <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+                      <div class="mdl-card__supporting-text">
+                        <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                        <p/>
+                        <h5>Grégoire Thouvenin</h5>
+                        Bioengineering, PhD Student<br/>
+                        EPF Lausanne, Switzerland iGEM (2015)<br/>
+                        </center>
+                      </div>
+                    </div>
+
+                <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+                  <div class="mdl-card__supporting-text">
+                    <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                    <p/>
+                    <h5>Jahir Gutierrez</h5>
+                    Bioengineering, PhD Student?<br/>
+                    UC San Diego, USA iGEM (2015)<br/>
+                    </center>
+                  </div>
+                </div>
+
+                <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+                  <div class="mdl-card__supporting-text">
+                    <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                    <p/>
+                    <h5>Julia Adrian</h5>
+                    Cognitive Science, PhD Student<br/>
+                    Norwegian University of Science and Technology, Norway iGEM (2015)
+                    </center>
+                  </div>
+                </div>
+
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+                    <div class="mdl-card__supporting-text">
+                      <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                      <p/>
+                      <h5>Joaquin Reyna</h5>
+                      UC San Diego, USA iGEM (2014)
+                      </center>
+                    </div>
+                  </div>
+
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+                    <div class="mdl-card__supporting-text">
+                      <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                      <p/>
+                      <h5>Walter Thavarajah</h5>
+                      UC San Diego, USA iGEM (2015)
+                      </center>
+                    </div>
+                  </div>
+
+                  <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+                    <div class="mdl-card__supporting-text">
+                      <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                      <p/>
+                      <h5>Vinson Lam</h5>
+                      UC Los Angeles, USA iGEM (2015)
+                      </center>
+                    </div>
+                  </div>
+              </section>
+
+              <hr/>
+                  <!-- SynBio Members -->
+                  <center><h3> Postdoctoral Researchers </h3></center>
+                  <section class="mdl-grid">
+                    <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+                      <div class="mdl-card__supporting-text">
+                        <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                        <p/>
+                        <h5>Roger Tseng, PhD</h5>
+                        Biology<br/>
+                        UC San Diego, USA iGEM (2017)
+                        </center>
+                      </div>
+                    </div>
+
+                    <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+                      <div class="mdl-card__supporting-text">
+                        <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                        <p/>
+                        <h5>Phillip Kyriakakis, PhD</h5>
+                        Bioengineering<br/>
+                        UC San Diego, USA iGEM (2015)
+                        </center>
+                      </div>
+                    </div>
+
+                    <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+                      <div class="mdl-card__supporting-text">
+                        <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                        <p/>
+                        <h5>Thiago Mosqueiro, PhD</h5>
+                        Biocircuits Institute<br/>
+                        University of São Paulo, Brazil iGEM (2015, 2016)
+                        </center>
+                      </div>
+                    </div>
+                </section>
+
+                <hr/>
+                    <!-- SynBio Members -->
+                    <center><h3> Involved Faculty Members</h3></center>
+                    <section class="mdl-grid">
+                      <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+                        <div class="mdl-card__supporting-text">
+                          <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                          <p/>
+                          <h5>Todd P. Coleman</h5>
+                          Bioengineering<br/>
+                          UC San Diego, USA iGEM (2015)<br/>
+                          <a href="http://coleman.ucsd.edu/">Neural Interaction Lab</a>
+                          </center>
+                        </div>
+                      </div>
+
+                      <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+                        <div class="mdl-card__supporting-text">
+                          <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                          <p/>
+                          <h5>Jim Golden</h5>
+                          Molecular Biology<br/>
+                          <a href="#">Golden Lab</a>
+                          </center>
+                        </div>
+                      </div>
+
+                      <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+                        <div class="mdl-card__supporting-text">
+                          <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                          <p/>
+                          <h5>Bernhard Ø. Palsson</h5>
+                          Molecular Biology<br/>
+                          <a href="http://systemsbiology.ucsd.edu/">Systems Biology Research Group</a>
+                          </center>
+                        </div>
+                      </div>
+
+                      <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+                        <div class="mdl-card__supporting-text">
+                          <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                          <p/>
+                          <h5>Rachel Dutton</h5>
+                          Molecular Biology<br/>
+                          <a href="http://www.theduttonlab.com/">Dutton Lab</a>
+                          </center>
+                        </div>
+                      </div>
+
+                      <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
+                        <div class="mdl-card__supporting-text">
+                          <center><img width=50% src="assets/images/2015igemlogo.png"/>
+                          <p/>
+                          <h5>Stephen Mayfield</h5>
+                          Molecular Biology<br/>
+                          <a href="http://algae.ucsd.edu/mayfield/index.html">Mayfield Lab</a>
+                          </center>
+                        </div>
+                      </div>
+                  </section>
+
+      </br></br>
+
+
+      </main> <!-- Closing tag for main content on page mdl-layout content -->
+    </div> <!-- Closing tag for MDL layout div -->
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  </body>
+</html>
