@@ -1,219 +1,114 @@
-<!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
+<!DOCTYPE html>
+<html>
+<title>SynBio | Projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
 
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar synbio-green w3-wide w3-padding w3-card-2">
+    <a href="#home" class="w3-bar-item w3-button"><b>Syn</b>Bio</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right">
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+      <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+      <a href="members.html" class="w3-bar-item w3-button">Members</a>
+      <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
 
-      https://www.apache.org/licenses/LICENSE-2.0
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
 
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">iGEM Projects</h3>
+  </div>
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="SynBio: Undergraduate Synthetic Biology Organization at UC San Diego">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>SynBio</title>
-
-    <!-- Page styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.niftymodals.css" />
-
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
-  </head>
-  <body class = "mdl-demo">
-    <!-- Div for MDL layout -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
-      <!-- Header -->
-      <div class="synbio-header mdl-layout__header mdl-layout__header--waterfall">
-        <div class="mdl-layout__header-row">
-          <span class="android-title mdl-layout-title">
-            <a href ="index.html"><font color="#696969">Syn</font><font color="#00933B">Bio</font></a>
-	    <!-- <img class="android-logo-image" src="images/synbiologo.png"> -->
-          </span>
-          <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="synbio-header-spacer mdl-layout-spacer"></div>
-          <!-- Navigation -->
-          <div class="android-navigation-container">
-
-            <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="about.html">About</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="members.html">Members</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="projects.html">Projects</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contact.html">Contact</a>
-            </nav>
-
-            <!-- Navigation Subtab (About) -->
-            <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu" for="about">
-              <li class="mdl-menu__item">SynBio</li>
-              <li disabled class="mdl-menu__item">Supporters</li>
-              <li disabled class="mdl-menu__item">Sponsors</li>
-            </ul>
-
-            <!-- Navigation Subtab (Education) -->
-            <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu" for="edu">
-              <li class="mdl-menu__item">SynBio.Learn</li>
-              <li class="mdl-menu__item">Outreach</li>
-              <li disabled class="mdl-menu__item">Journal Club</li>
-            </ul>
-
-            <!-- Navigation Subtab (Project) -->
-            <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu" for="proj">
-              <li class="mdl-menu__item">iGEM</li>
-              <li class="mdl-menu__item">DIY Project Incubator</li>
-            </ul>
-          </div> <!-- Navigation closing tag -->
-
-          <!-- Header title -->
-          <span class="android-mobile-title mdl-layout-title">
-          <a href="index.html"><b><font color=#696969>SYN</font><font color=#00933B>BIO</font></b></a>
-          <!-- <img class="android-logo-image" src="images/synbiologo.png"> -->
-          </span>
-
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <a href="http://www.pengfeidiybio.net/" target="_blank"><img src="images/2017igemlogo.jpg" alt="House" style="width:100%"></a>
+        <center><p class="w3-wide">2017: iGEM (ongoing)</p></center>
+        <div class="w3-light-grey">
+          <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:20%">20%</div>
         </div>
-      </div> <!-- Closing tags for header -->
+        <br/>
+      </div>
+    </div>
 
-      <!-- Navigation Drawer for Mobile -->
-      <div class="android-drawer mdl-layout__drawer">
-      <span class="mdl-layout-title">
-      <font class="android-logo-image" color="#696969">Syn<font color="#00933B">Bio</font></font>
-      <!-- <img class="android-logo-image" src="images/synbiologo.png"> -->
-      </span>
-
-      <!-- Navigation for Mobile -->
-      <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="about.html">About</a>
-      <a class="mdl-navigation__link" href="members.html">Members</a>
-      <a class="mdl-navigation__link" href="projects.html">Projects</a>
-      <a class="mdl-navigation__link" href="contact.html">Contact</a>
-      </nav>
-      </div> <!-- Closing tag for navigation for mobile -->
-
-      <!-- Main content on the page -->
-      <main class="mdl-layout__content projects">
-
-        <!-- TEXT CONTENT TABS -->
-        <div class="mdl-layout__tab-panel is-active">
-
-          <section class="mdl-grid">
-
-          <!-- 2017 iGEM Project -->
-            <div class="mdl-card mdl-cell mdl-cell--4-col">
-              <button class="md-trigger" data-modal="modal-3">
-                <div class="mdl-card__supporting-text">
-                  <center>
-                      <img class="tile" width=100% src="assets/images/igemlogo.png"></img>
-                  </center>
-                </div>
-              </button>
-            </div>
-
-          <!-- 2015 iGEM Project -->
-        <div class="mdl-card mdl-cell mdl-cell--4-col">
-          <button class="md-trigger" data-modal="modal-2">
-            <div class="mdl-card__supporting-text">
-              <center>
-                  <img class="tile" width=100% src="assets/images/2015igemlogo.png"></img>
-              </center>
-            </div>
-          </button>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <a href="http://2015.igem.org/Team:UC_San_Diego" target="_blank"><img src="images/2015igemlogo.png" alt="House" style="width:100%"></a>
+        <center><p class="w3-wide">2015: Fiat Lux</p></center>
+        <div class="w3-light-grey">
+          <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100% - Complete!</div>
         </div>
+        <br/>
+      </div>
+    </div>
 
-          <!-- 2014 iGEM Project -->
-          <div class="mdl-card mdl-cell mdl-cell--4-col">
-            <button class="md-trigger" data-modal="modal-1">
-              <div class="mdl-card__supporting-text">
-                <center>
-                    <img class="tile" width=100% src="assets/images/2014igemlogo.png"></img>
-                </center>
-              </div>
-            </button>
-          </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <a href="http://2014.igem.org/Team:UCSD_Software" target="_blank"><img src="images/2014igemlogo.png" alt="House" style="width:100%"></a>
+        <center><p class="w3-wide">2014: SBiDer</p></center>
+        <div class="w3-light-grey">
+          <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100% - Complete!</div>
+        </div>
+        <br/>
+      </div>
+    </div>
 
-          </section>
-
-          <div class="md-container" id="modal-3">
-      			<div class="md-content">
-      				<div><br/><br/>
-      					<img width=100% src="https://static.wixstatic.com/media/fc2dc6_d985ce33d4864324ac040ee2c28bbcaa~mv2_d_1654_1239_s_2.png/v1/fill/w_1063,h_796,al_c,usm_0.66_1.00_0.01/fc2dc6_d985ce33d4864324ac040ee2c28bbcaa~mv2_d_1654_1239_s_2.png"></img>
-      					2017 iGEM
-				        <button class="/assets/test.pdf">Application</button>
-      					<button class="/assets/test.pdf">Sponsorship Package</button>
-      					<button class="md-close">Close</button>
-      				</div>
-      			</div>
-      		</div>
-
-          <div class="md-container" id="modal-2">
-            <div class="md-content">
-              <div>
-                <img width=100% src="assets/images/2015overview.png"></img>
-                <ul>
-                  <li><strong>2014 iGEM:</strong> SBiDer</li>
-                </ul>
-                <button class="md-close">Close</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="md-container" id="modal-1">
-            <div class="md-content">
-              <div>
-                <img width=100% src="assets/images/2015overview.png"></img>
-                <ul>
-                  <li><strong>2014 iGEM:</strong> SBiDer</li>
-                </ul>
-                <button class="md-close">Close me!</button>
-              </div>
-            </div>
-          </div>
+  </div>
 
 
-          <br/><br/>
 
-      </main> <!-- Closing tag for main content on page mdl-layout content -->
-    </div> <!-- Closing tag for MDL layout div -->
+<!-- non-IGEM Projects -->
+<div class="w3-container w3-padding-32" id="projects">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">SynBio (non-iGEM) Projects</h3>
+</div>
 
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="js/jquery.niftymodals.js"></script>
-    <script>
-	    $(document).ready(function() {
+<div class="w3-row-padding">
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <div class="w3-display-topleft w3-black w3-padding">SBiDer 2.0</div>
+      <img src="https://www.w3schools.com/w3images/house3.jpg" alt="House" style="width:100%">
+      <center><p class="w3-wide">Ongoing</p></center>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%">70%</div>
+      </div>
+      <br/>
+    </div>
+  </div>
 
-				$('.md-trigger').on('click',function(){
+  <div class="w3-col l3 m6 w3-margin-bottom">
+    <div class="w3-display-container">
+      <div class="w3-display-topleft w3-black w3-padding">some other proj</div>
+      <img src="https://www.w3schools.com/w3images/house3.jpg" alt="House" style="width:100%">
+      <center><p class="w3-wide">Ongoing</p></center>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:50%">50%</div>
+      </div>
+      <br/>
+    </div>
+  </div>
 
-					var modal = $(this).data('modal');
-					$("#" + modal).niftyModal();
-				});
 
-	    });
-    </script>
+</div>
 
-<div class="md-overlay"></div>
+<!-- End page content -->
+</div>
 
-  </body>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+SynBio © 2017
+</footer>
+
+</body>
 </html>
